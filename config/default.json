@@ -1,0 +1,9 @@
+{
+  "mongo": "mongodb://127.0.0.1:27017/",
+  "comment_mongo": "<название базы для копирование монго>",
+  "mongoDataBase": "eqyzmetdb",
+  "pg_username": "postgres",
+  "pg_password": "1",
+  "pg_database": "new_eqyzmet",
+  "jwt": "json_web_token_key"
+}

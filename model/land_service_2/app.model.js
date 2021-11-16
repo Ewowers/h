@@ -1,0 +1,53 @@
+const { DataTypes, Sequelize } = require("sequelize");
+const sequelize = require("../../pg.config");
+
+const land_info = sequelize.define(
+  "app",
+  {
+    id: { type: DataTypes.INTEGER, unique: true, autoIncrement: true, primaryKey: true },
+    actOfReconciliation: { type: DataTypes.STRING },
+    actOfReconciliationDate: { type: DataTypes.STRING },
+    address: { type: DataTypes.STRING },
+    addressFinished: { type: DataTypes.STRING },
+    addressRegCode: { type: DataTypes.STRING },
+    appId: { type: DataTypes.STRING },
+    applicantIinBin: { type: DataTypes.STRING },
+    applicantIsOrg: { type: DataTypes.BOOLEAN },
+    applicantName: { type: DataTypes.STRING },
+    applicantRejected: { type: DataTypes.STRING },
+    approved: { type: DataTypes.STRING },
+    approvedFile: { type: DataTypes.STRING },
+    approvedFileOriginal: { type: DataTypes.STRING },
+    approvedFileOzo: { type: DataTypes.STRING },
+    apzId: { type: DataTypes.STRING },
+    archSigned: { type: DataTypes.BOOLEAN },
+    archSignedDate: { type: DataTypes.STRING },
+    archSignedUserId: { type: DataTypes.STRING },
+    archSignedUserIp: { type: DataTypes.STRING },
+    archSignedXml: { type: DataTypes.STRING },
+    archTech: { type: DataTypes.STRING },
+    bin: { type: DataTypes.STRING },
+    communalsChecked: { type: DataTypes.STRING },
+    communalsCheckedDate: { type: DataTypes.STRING },
+    control: { type: DataTypes.STRING },
+    createDate: { type: DataTypes.DATE },
+    currentExecutor: { type: DataTypes.STRING },
+    currentOwner: { type: DataTypes.STRING },
+    currentStatus: { type: DataTypes.STRING },
+    currentTaskName: { type: DataTypes.STRING },
+    deleted: { type: DataTypes.STRING },
+    designerInfo: { type: DataTypes.STRING },
+    electricInfo: { type: DataTypes.STRING },
+    eskizFile: { type: DataTypes.STRING },
+    factEndDate: { type: DataTypes.STRING },
+    finishedCommission: { type: DataTypes.STRING },
+    firstName: { type: DataTypes.STRING },
+    gasInfo: { type: DataTypes.STRING },
+    guid: { type: DataTypes.STRING },
+    heatInfo: { type: DataTypes.STRING },
+    iin: { type: DataTypes.STRING },
+  },
+  {}
+);
+land_info.sync();
+module.exports = land_info;

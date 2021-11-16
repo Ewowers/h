@@ -1,0 +1,21 @@
+{
+  "incoming": 18,
+  "allTasks": 32,
+  "unassignedTasks": 0,
+  "outcoming": 742,
+  "control": 0,
+  "currentTasks": 0,
+  "finishedTasks": 0,
+  "incomingCorrespondences": 0,
+  "outcomingCorrespondences": 0,
+  "access": [
+    "incoming",
+    "allTasks",
+    "outcoming",
+    "currentTasks",
+    "finishedTasks",
+    "statistic",
+    "serviceStatistics",
+    "reports"
+  ]
+}
